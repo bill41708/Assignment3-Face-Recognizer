@@ -84,6 +84,7 @@ model.add(Dense(64, input_dim=64,
                 activity_regularizer=regularizers.l1(0.000001)))
 """
 
+
 model.add(Conv2D(32, 3, activation="relu",padding='valid'))
 model.add(Dropout(0.2))
 model.add(MaxPooling2D(pool_size=(2, 2)))
